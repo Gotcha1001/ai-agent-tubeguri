@@ -145,7 +145,7 @@ function AgentBuilder() {
 
   return (
     <div>
-      <Header agentDetail={agentDetail} />
+      <Header agentDetail={agentDetail} onPublish={SaveNodesAndEdges} />
       <div style={{ width: "100vw", height: "90vh" }}>
         <ReactFlow
           nodes={addedNodes}

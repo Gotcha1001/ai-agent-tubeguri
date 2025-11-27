@@ -19,9 +19,10 @@
 // }
 
 import { NextResponse, NextRequest } from "next/server";
-import { aj } from "@/config/Arcjet";
+import { getArcjet } from "@/config/Arcjet";
 
 export async function GET(req: NextRequest) {
+  const aj = getArcjet();
   const userId = "user123";
 
   // Create the adapter context with getBody method
